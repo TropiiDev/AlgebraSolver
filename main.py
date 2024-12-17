@@ -1,5 +1,8 @@
 from operations import *
 
+def error():
+    print("Sorry for the incorrect answer.\nPlease add an issue here: https://github.com/TropiiDev/AlgebraSolver/issues")
+
 while True:
     mathematical_operation = str(input("""
         Welcome to the Python Algebra Solver!
@@ -41,10 +44,10 @@ while True:
                     print("Bye bye!")
                     break
             else:
-                print("Something must have gone wrong.. Add an error to the Github.")
+                error()
                 break
         if correct == "n":
-            print("Something must have gone wrong.. Add an error to the Github.")
+            error()
             break
     else:
         print("The operation inputted has either not been created or is not available. Try again.")
