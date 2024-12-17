@@ -1,4 +1,5 @@
 from operations import *
+import time
 
 def error():
     print("Sorry for the incorrect answer.\nPlease add an issue here: https://github.com/TropiiDev/AlgebraSolver/issues")
@@ -51,3 +52,5 @@ while True:
             break
     else:
         print("The operation inputted has either not been created or is not available. Try again.")
+        print("The program will continue in 2 seconds.")
+        time.sleep(2)
